@@ -27,11 +27,13 @@ class AppBarData {
   final String title;
   final bool showLive;
   final bool showUpcoming;
+  final bool titleCenter;
 
   AppBarData({
     required this.title,
     required this.showLive,
     required this.showUpcoming,
+    required this.titleCenter,
   });
 
   factory AppBarData.fromJson(Map<String, dynamic> json) {
@@ -39,6 +41,7 @@ class AppBarData {
       title: json['title'] ?? '',
       showLive: json['showLive'] ?? false,
       showUpcoming: json['showUpcoming'] ?? false,
+      titleCenter: json['titleCenter'] ?? false,
     );
   }
 }

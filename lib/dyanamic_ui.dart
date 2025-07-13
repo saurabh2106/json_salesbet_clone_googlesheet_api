@@ -79,6 +79,7 @@ class _DynamicUIScreenState extends State<DynamicUIScreen> {
         return Scaffold(
           appBar: AppBar(
             title: Text(appData.appBar.title),
+            centerTitle: appData.appBar.titleCenter,
             backgroundColor: Colors.blueAccent,
           ),
           body: SingleChildScrollView(
